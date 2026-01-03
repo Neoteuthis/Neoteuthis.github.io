@@ -1,0 +1,51 @@
+/* Dark cosmic background */
+body {
+  background: radial-gradient(circle at top, #1a1a2e, #0d0d1a 60%, #000000);
+  color: #e6e6f0;
+  font-family: "Inter", sans-serif;
+}
+
+/* Aurora header bar */
+header, .page-header {
+  background: linear-gradient(
+    120deg,
+    #4facfe,
+    #00f2fe,
+    #43e97b,
+    #fa709a,
+    #a18cd1
+  );
+  background-size: 300% 300%;
+  animation: aurora 12s ease infinite;
+  color: white;
+  text-shadow: 0 0 8px rgba(0,0,0,0.4);
+}
+
+/* Aurora animation */
+@keyframes aurora {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Card-style sections */
+section {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(6px);
+}
+
+/* Links with galaxy shimmer */
+a {
+  color: #8fd3f4;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  color: #fa709a;
+  text-shadow: 0 0 6px rgba(250,112,154,0.6);
+}
