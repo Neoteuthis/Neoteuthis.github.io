@@ -4,9 +4,16 @@ body {
   color: #e6e6f0;
   font-family: "Inter", sans-serif;
 }
+/* Remove Cayman’s default header background */
+.page-header,
+.project-name,
+.project-tagline {
+  background: transparent !important;
+}
+
 
 /* Aurora header bar */
-header, .page-header {
+.page-header {
   background: linear-gradient(
     120deg,
     #4facfe,
@@ -14,12 +21,13 @@ header, .page-header {
     #43e97b,
     #fa709a,
     #a18cd1
-  );
-  background-size: 300% 300%;
-  animation: aurora 12s ease infinite;
-  color: white;
-  text-shadow: 0 0 8px rgba(0,0,0,0.4);
+  ) !important;
+  background-size: 300% 300% !important;
+  animation: aurora 12s ease infinite !important;
+  color: white !important;
+  text-shadow: 0 0 8px rgba(0,0,0,0.4) !important;
 }
+
 
 /* Aurora animation */
 @keyframes aurora {
@@ -44,7 +52,9 @@ a {
   text-decoration: none;
   transition: 0.3s ease;
 }
-
+.page-header {
+  padding: 4rem 2rem !important;
+}
 a:hover {
   color: #fa709a;
   text-shadow: 0 0 6px rgba(250,112,154,0.6);
