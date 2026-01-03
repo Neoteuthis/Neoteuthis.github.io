@@ -23,7 +23,7 @@ title: Nova's homepage
 #title: Your awesome title
 email: neoteuthis@outlook.com
 description: >-
-  The Official Landing for Neoteuthis Games' Playtest Material. Keep checking back as the site evolves! 
+  The Official Landing for Neoteuthis Games' Playtest Material. Keep checking back as the site evolves! This site is currently under construction (Many of the names used are placeholders).
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
