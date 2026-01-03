@@ -18,19 +18,23 @@ layout: nil
   </head>
 
   <body>
-    <header class="page-header">
-      <h1 class="project-name">{{ site.title }}</h1>
-      <h2 class="project-tagline">{{ site.description }}</h2>
-    </header>
+    <section class="page-header">
+      <div class="wrapper">
+        <h1 class="project-name">{{ site.title }}</h1>
+        <h2 class="project-tagline">{{ site.description }}</h2>
+      </div>
+    </section>
 
-    <main id="content">
+    <main id="content" class="wrapper">
       {{ content }}
     </main>
 
     <footer class="site-footer">
-      <span class="site-footer-owner">
-        {{ site.title }} is maintained by {{ site.github.owner_name }}.
-      </span>
+      <div class="wrapper">
+        <span class="site-footer-owner">
+          {{ site.title }} is maintained by {{ site.github.owner_name }}.
+        </span>
+      </div>
     </footer>
   </body>
 </html>
